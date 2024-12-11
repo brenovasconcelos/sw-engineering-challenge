@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .  # Points to the directory containing the Dockerfile
+    ports:
+      - "8000:8000"  # Map port 8000 on the host to port 8000 in the container
+    volumes:
+      - .:/app  # Mount the current directory into the container
+    environment:
+      POETRY_NO_INTERACTION: "1"
+      POETRY_VIRTUALENVS_IN_PROJECT: "1"
+      POETRY_VIRTUALENVS_CREATE: "1"
+      POETRY_CACHE_DIR: "/tmp/poetry_cache"
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -110,3 +110,7 @@ The recommended time to implement this challenge is two days. We're aware, thoug
 ## Programming language, tech stack, etc
 
 Unless told otherwise, feel free to use your favorite programming language and tech stack to implement this challenge.
+
+bloqit
+bloqit@bloq.com
+123
