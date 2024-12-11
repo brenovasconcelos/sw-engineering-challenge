@@ -4,8 +4,7 @@ from rent.models import Rent
 from locker.models import Locker
 from bloq.models import Bloq
 from django.urls import reverse
-from datetime import timedelta
-from django.utils import timezone
+
 
 class RentViewSetTestCase(APITestCase):
 
